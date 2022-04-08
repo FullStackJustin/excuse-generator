@@ -23,12 +23,24 @@
         alt="Bad Boy Cartoon"
       />
       <p>
-        Use this as your 'Get Out Of Jail Free' card when you need one.
+        Use this for a quick excuse when you need one.
       </p>
       <button id="generator" onclick="excuse()">Click here!</button>
+      <p id="insert"></p>
     </div>
     <script>
-      const myBtn =
+      function excuse() {
+        var part1 = ["dog", "sister", "grandma"];
+        var verb = ["ate", "stole", "destroyed"];
+        var noun = ["homework", "pizza", "phone"];
+
+        let who = part1[Math.round(Math.random() * (part1.length - 1))];
+        let did = verb[Math.round(Math.random() * (verb.length - 1))];
+        let what = noun[Math.round(Math.random() * (noun.length - 1))];
+
+        document.getElementById("insert").innerHTML =
+          "My " + who + " " + did + " my " + what + ".";
+      }
     </script>
   </body>
 </html>

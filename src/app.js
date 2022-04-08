@@ -14,6 +14,6 @@ window.onload = function excuse() {
   let did = verb[Math.round(Math.random() * (verb.length - 1))];
   let what = noun[Math.round(Math.random() * (noun.length - 1))];
 
-  document.getElementById("generator").innerHTML =
+  document.getElementById("insert").innerHTML =
     "My " + who + " " + did + " my " + what + ".";
 };
